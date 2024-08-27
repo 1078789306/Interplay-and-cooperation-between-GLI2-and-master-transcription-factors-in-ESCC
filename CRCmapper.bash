@@ -1,0 +1,2 @@
+#REFERENCE: Models of Human Core Transcriptional Regulatory Circuitries. Violaine Saint-André, Alexander J. Federation, Charles Y. Lin, Brian J. Abraham, Jessica Reddy, Tong Ihn Lee, James E. Bradner, Richard A. Young. Genome Res. 2016. 26: 385-396 (https://genome.cshlp.org/content/26/3/385.long)
+python CRCmapper.py -e SuperEnhancers.table.txt -b H3K27ac.sort.bam -g HG19 -f hg19.genome.fa -s H3K27ac.broadPeak -x 33 -l 500 -n sample-name -o ~/
