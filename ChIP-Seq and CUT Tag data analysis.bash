@@ -1,7 +1,7 @@
 ### ChIP-Seq and CUT&Tag data ananlysis
 
 #Sequence alignment
-file="HK27ac"
+file="H3K27ac"
 /home/jyxyyxy/bowtie2-2.4.5-linux-x86_64/bowtie2 -p 100 -x /home/jyxyyxy/bowtie2index/hg19/hg19 ./$file/$file'.fastq.gz' -S ./$file/$file'.sam'
 samtools view -@ 10 -b -S ./$file/$file'.sam' > ./$file/$file'.bam'
 samtools sort -@ 10 ./$file/$file'.bam' -o ./$file/$file'.sort.bam'
